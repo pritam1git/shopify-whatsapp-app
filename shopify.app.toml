@@ -1,0 +1,27 @@
+# Learn more about configuring your app at https://shopify.dev/docs/apps/tools/cli/configuration
+
+client_id = "f116721608d775c3e8d81c83a9ebaa36"
+name = "WHATSAPP CHAT"
+application_url = "https://d653da35cc7c.ngrok-free.app"
+embedded = true
+
+[build]
+automatically_update_urls_on_dev = true
+
+[webhooks]
+api_version = "2025-10"
+
+[access_scopes]
+scopes = "read_products,write_products,read_script_tags,write_script_tags"
+
+[auth]
+redirect_urls = [
+  "https://d653da35cc7c.ngrok-free.app/auth/callback"
+]
+
+# ✅ Add this section for your theme extension
+[[extensions]]
+type = "theme"
+name = "WhatsApp Chat"
+handle = "whatsapp_chat"
+path = "extensions/whatsapp_chat"

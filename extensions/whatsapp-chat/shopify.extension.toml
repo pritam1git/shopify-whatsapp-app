@@ -1,0 +1,8 @@
+name = "WhatsApp Chat"
+
+uid = "0e155356-61af-9364-1474-19d096e473d75007d4c1"
+
+type = "theme"
+
+[extension]
+handle = "whatsapp_chat"

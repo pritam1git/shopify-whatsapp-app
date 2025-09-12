@@ -1,0 +1,29 @@
+{
+  "name": "shopify-whatsapp-chat-app",
+  "version": "1.0.0",
+  "description": "Shopify WhatsApp Chat App",
+  "main": "server.js",
+  "type": "module",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js",
+    "db:create": "node scripts/createDatabase.js"
+  },
+  "dependencies": {
+    "@shopify/shopify-api": "^11.14.1",
+    "@shopify/shopify-app-session-storage-mysql": "^4.0.20",
+    "@shopify/ui-extensions": "2025.7.1",
+    "@shopify/ui-extensions-react": "2025.7.1",
+    "body-parser": "^1.20.2",
+    "cookie-parser": "^1.4.7",
+    "dotenv": "^17.2.1",
+    "express": "^4.18.2",
+    "express-session": "^1.18.2",
+    "mysql2": "^3.6.5",
+    "react": "^18.3.1",
+    "react-reconciler": "0.29.0"
+  },
+  "devDependencies": {
+    "nodemon": "^3.0.2"
+  }
+}

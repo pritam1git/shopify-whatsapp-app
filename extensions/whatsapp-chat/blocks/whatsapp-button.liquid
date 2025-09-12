@@ -1,0 +1,55 @@
+{% schema %}
+{
+  "name": "WhatsApp Button",
+  "target": "body",
+  "settings": [
+    {
+      "type": "text",
+      "id": "phone",
+      "label": "WhatsApp Number",
+      "default": "919888969340"
+    },
+    {
+      "type": "text",
+      "id": "message",
+      "label": "Default Message",
+      "default": "Hi I am interested in this product."
+    },
+    {
+      "type": "text",
+      "id": "buttonText",
+      "label": "Button Text",
+      "default": "Chat on WhatsApp"
+    },
+    {
+      "type": "select",
+      "id": "position",
+      "label": "Button Position",
+      "default": "bottom-right",
+      "options": [
+        { "value": "bottom-right", "label": "Bottom Right" },
+        { "value": "bottom-left", "label": "Bottom Left" },
+        { "value": "top-right", "label": "Top Right" },
+        { "value": "top-left", "label": "Top Left" }
+      ]
+    },
+    {
+      "type": "color",
+      "id": "buttonColor",
+      "label": "Button Color",
+      "default": "#25D366"
+    }
+  ]
+}
+{% endschema %}
+
+<div class="whatsapp-wrapper"
+     data-phone="{{ block.settings.phone }}"
+     data-message="{{ block.settings.message }}"
+     data-text="{{ block.settings.buttonText }}"
+     data-position="{{ block.settings.position }}"
+     data-color="{{ block.settings.buttonColor }}">
+</div>
+
+{{ 'whatsapp.css' | asset_url | stylesheet_tag }}
+<script src="{{ 'whatsapp.js' | asset_url }}" defer></script>

@@ -1,0 +1,9 @@
+{
+  "name": "WhatsApp Button",
+  "blocks": {
+    "whatsapp-button": {
+      "name": "WhatsApp Chat Button",
+      "description": "Floating WhatsApp button on storefront"
+    }
+  }
+}
