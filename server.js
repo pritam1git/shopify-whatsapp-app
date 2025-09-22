@@ -22,7 +22,7 @@ async function startServer() {
   try {
     // Initialize database first
     await initDatabase();
-    console.log("✅ Database initialized");
+    console.log("✅ Database initializedddddddd");
 
     // Middleware setup
     app.use(cookieParser());
