@@ -24,7 +24,7 @@ export const shopify = shopifyApi({
   scopes: (process.env.SHOPIFY_SCOPES || "read_products,write_script_tags,read_orders").split(','),
   hostName: process.env.SHOPIFY_HOST.replace(/^https?:\/\//, ""),
   hostScheme: process.env.NODE_ENV === 'production' ? "https" : "https",
-  apiVersion: "2024-01",
+  apiVersion: "2025-07",
   isEmbeddedApp: true,
   cookies: {
     secure: process.env.NODE_ENV === 'production', // true in prod
